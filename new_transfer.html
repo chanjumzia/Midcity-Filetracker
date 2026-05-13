@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Transfer - Real Estate Management System</title>
+    <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body>
+    <div class="main-content">
+        <h1>New Transfer</h1>
+        <form id="new-transfer-form">
+            <div class="form-group">
+                <label for="datetime">Date and Time:</label>
+                <input type="datetime-local" id="datetime" name="datetime" required>
+            </div>
+            <div class="form-group">
+                <label for="mclr-no">MCLR No.:</label>
+                <input type="text" id="mclr-no" name="mclr-no" required>
+            </div>
+            <div class="form-group">
+                <label for="plot-no">Plot No (optional):</label>
+                <input type="text" id="plot-no" name="plot-no">
+            </div>
+            <div class="form-group">
+                <label for="block">Block (optional):</label>
+                <input type="text" id="block" name="block">
+            </div>
+            <div class="form-group">
+                <label for="size">Size:</label>
+                <input type="text" id="size" name="size" required>
+            </div>
+            <div class="form-group">
+                <label>Payment Status:</label>
+                <input type="radio" id="regular" name="payment-status" value="regular">
+                <label for="regular">Regular</label>
+                <input type="radio" id="full-paid" name="payment-status" value="full-paid">
+                <label for="full-paid">Full Paid</label>
+            </div>
+
+            <h2>Seller Information</h2>
+            <div class="form-group">
+                <label for="seller-name">Name:</label>
+                <input type="text" id="seller-name" name="seller-name" required>
+            </div>
+            <div class="form-group">
+                <label for="seller-guardian">Son/Wife/Daughter of:</label>
+                <input type="text" id="seller-guardian" name="seller-guardian" required>
+            </div>
+            <div class="form-group">
+                <label for="seller-cnic">CNIC:</label>
+                <input type="text" id="seller-cnic" name="seller-cnic" required>
+            </div>
+            <div class="form-group">
+                <label for="seller-contact">Contact No:</label>
+                <input type="text" id="seller-contact" name="seller-contact" required>
+            </div>
+            <div class="form-group">
+                <label>NDC fee paid?</label>
+                <input type="radio" id="ndc-yes" name="ndc-fee" value="yes">
+                <label for="ndc-yes">Yes</label>
+                <input type="radio" id="ndc-no" name="ndc-fee" value="no">
+                <label for="ndc-no">No</label>
+            </div>
+            <div class="form-group">
+                <label>Gain Tax Paid?</label>
+                <input type="radio" id="gain-tax-yes" name="gain-tax" value="yes">
+                <label for="gain-tax-yes">Yes</label>
+                <input type="radio" id="gain-tax-no" name="gain-tax" value="no">
+                <label for="gain-tax-no">No</label>
+            </div>
+            <div class="form-group">
+                <label>Form 7E Paid?</label>
+                <input type="radio" id="form-7e-yes" name="form-7e" value="yes">
+                <label for="form-7e-yes">Yes</label>
+                <input type="radio" id="form-7e-no" name="form-7e" value="no">
+                <label for="form-7e-no">No</label>
+            </div>
+            <div class="form-group">
+                <label>Excise NOC issued?</label>
+                <input type="radio" id="excise-noc-yes" name="excise-noc" value="yes">
+                <label for="excise-noc-yes">Yes</label>
+                <input type="radio" id="excise-noc-no" name="excise-noc" value="no">
+                <label for="excise-noc-no">No</label>
+            </div>
+
+            <h2>Buyer Information</h2>
+            <div class="form-group">
+                <label for="buyer-name">Name:</label>
+                <input type="text" id="buyer-name" name="buyer-name" required>
+            </div>
+            <div class="form-group">
+                <label for="buyer-guardian">Son/Wife/Daughter of:</label>
+                <input type="text" id="buyer-guardian" name="buyer-guardian" required>
+            </div>
+            <div class="form-group">
+                <label for="buyer-cnic">CNIC:</label>
+                <input type="text" id="buyer-cnic" name="buyer-cnic" required>
+            </div>
+            <div class="form-group">
+                <label for="buyer-contact">Contact No:</label>
+                <input type="text" id="buyer-contact" name="buyer-contact" required>
+            </div>
+            <div class="form-group">
+                <label>Transfer fee paid?</label>
+                <input type="radio" id="transfer-fee-yes" name="transfer-fee" value="yes">
+                <label for="transfer-fee-yes">Yes</label>
+                <input type="radio" id="transfer-fee-no" name="transfer-fee" value="no">
+                <label for="transfer-fee-no">No</label>
+            </div>
+            <div class="form-group">
+                <label>FBR TAX 236-K Paid?</label>
+                <input type="radio" id="fbr-tax-yes" name="fbr-tax" value="yes">
+                <label for="fbr-tax-yes">Yes</label>
+                <input type="radio" id="fbr-tax-no" name="fbr-tax" value="no">
+                <label for="fbr-tax-no">No</label>
+            </div>
+             <div class="form-group">
+                <label>Stamp Duty Paid?</label>
+                <input type="radio" id="stamp-duty-yes" name="stamp-duty" value="yes">
+                <label for="stamp-duty-yes">Yes</label>
+                <input type="radio" id="stamp-duty-no" name="stamp-duty" value="no">
+                <label for="stamp-duty-no">No</label>
+            </div>
+            <div class="form-group">
+                <label>TMA fee Paid?</label>
+                <input type="radio" id="tma-fee-yes" name="tma-fee" value="yes">
+                <label for="tma-fee-yes">Yes</label>
+                <input type="radio" id="tma-fee-no" name="tma-fee" value="no">
+                <label for="tma-fee-no">No</label>
+            </div>
+
+            <button type="submit">Send for processing department</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('datetime').value = new Date().toISOString().slice(0, 16);
+    </script>
+</body>
+</html>
