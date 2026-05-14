@@ -1,35 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Management System</title>
-    <link rel="stylesheet" href="style.css?v=1.1">
-</head>
-<body>
-    <div class="main-content">
-        <h1>Welcome to Real Estate Management System</h1>
-        <a href="new_transfer.html"><button>For New Transfer</button></a>
-        <hr>
-        <div>
-            <input type="text" placeholder="Enter File Number">
-            <button>For Status of any File</button>
-        </div>
-    </div>
-    <div class="sidebar">
-        <h3>Pakistan Real Estate News</h3>
-        <div class="news-item">
-            <h4>Govt Announces New Housing Scheme</h4>
-            <p>The government has launched a new housing scheme for low-income families...</p>
-        </div>
-        <div class="news-item">
-            <h4>Property Prices on the Rise in Lahore</h4>
-            <p>Real estate prices in Lahore have seen a significant increase in the last quarter...</p>
-        </div>
-        <div class="news-item">
-            <h4>Gwadar Port Project Boosts Real Estate</h4>
-            <p>The ongoing development of Gwadar port has led to a boom in the local real estate market...</p>
-        </div>
-    </div>
-</body>
-</html>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Real Estate Management System</title>
+          <link rel="stylesheet" href="style.css?v=1.8">
+      </head>
+      <body>
+         <div class="main-content">
+             <h1>Welcome to Real Estate Management System</h1>
+
+             <div class="dashboard">
+                 <div class="dashboard-card">
+                     <h3>Pending Files</h3>
+                     <p id="pending-count">15</p>
+                 </div>
+                 <div class="dashboard-card">
+                     <h3>Complete Files</h3>
+                     <p id="complete-count">42</p>
+                 </div>
+                 <div class="dashboard-card">
+                     <h3>Handed Over Files</h3>
+                     <p id="handed-over-count">120</p>
+                 </div>
+             </div>
+
+             <div class="pending-files-table">
+                <h2>Top 5 Pending Files</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Serial No.</th>
+                            <th>MCLR</th>
+                            <th>MC No.</th>
+                            <th>Submitted Date</th>
+                            <th>Name of Seller</th>
+                            <th>Name of Buyer</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A-11</td>
+                            <td>22</td>
+                            <td>2024-07-25</td>
+                            <td>Ali Hassan</td>
+                            <td>Zainab Ahmed</td>
+                            <td>Pending NDC</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>B-10</td>
+                            <td>54</td>
+                            <td>2024-07-24</td>
+                            <td>Fatima Khan</td>
+                            <td>Bilal Chaudhry</td>
+                            <td>Pending Gain Tax</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>C-10</td>
+                            <td>88</td>
+                            <td>2024-07-23</td>
+                            <td>Usman Tariq</td>
+                            <td>Ayesha Malik</td>
+                            <td>Pending FBR Tax</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>D-11</td>
+                            <td>01</td>
+                            <td>2024-07-22</td>
+                            <td>Saadullah Jan</td>
+                            <td>Sana Iqbal</td>
+                            <td>Pending Transfer Fee</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>E-10</td>
+                            <td>32</td>
+                            <td>2024-07-21</td>
+                            <td>Imran Shah</td>
+                            <td>Hina Altaf</td>
+                            <td>Pending NDC</td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+
+             <hr style="margin-top: 30px;">
+             <div class="actions-container-bottom">
+                 <a href="new_transfer.html"><button>New Transfer</button></a>
+                 <div class="status-search-container">
+                    <button>File Status</button>
+                    <input type="text" placeholder="Enter File Number">
+                 </div>
+                 <button class="print-button">Print Report</button>
+             </div>
+
+         </div>
+         <div class="sidebar">
+             <h1>News</h1>
+             
+             <h2>Pakistan Real Estate</h2>
+             <div class="news-item">
+                 <h4>Lahore's LDA City Sees New Development</h4>
+                 <p>New infrastructure projects are accelerating development and property values in LDA City.</p>
+             </div>
+             <div class="news-item">
+                 <h4>Karachi Coastal Projects Announced</h4>
+                 <p>The government has announced new coastal development projects, boosting Karachi's market.</p>
+             </div>
+             <div class="news-item">
+                 <h4>Tax Incentives for Construction Sector</h4>
+                 <p>New tax incentives are expected to lower construction costs and spur new projects nationwide.</p>
+             </div>
+             <div class="news-item">
+                 <h4>Blue World City Launches Overseas Block</h4>
+                 <p>A new block has been launched, targeting overseas Pakistanis with international-standard amenities.</p>
+             </div>
+
+             <h2 style="margin-top: 30px;">Dubai Real Estate</h2>
+             <div class="news-item">
+                 <h4>Dubai Property Prices Rise in Q3 2024</h4>
+                 <p>The market continues its upward trend, with significant price increases in villas and apartments.</p>
+             </div>
+             <div class="news-item">
+                 <h4>New Villas in Arabian Ranches 4</h4>
+                 <p>Emaar has launched a new phase of luxury villas, which were sold out within hours.</p>
+             </div>
+             <div class="news-item">
+                 <h4>Golden Visa Attracting Investors</h4>
+                 <p>The Golden Visa program remains a key driver for international investment in Dubai real estate.</p>
+             </div>
+         </div>
+      </body>
+      </html>
